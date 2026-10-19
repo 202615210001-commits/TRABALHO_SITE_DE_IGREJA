@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;    
+}
+
+.montserrat{
+  font-family: "Montserrat";
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cormorant-garamond{
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{   
+    margin-top: 108px;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #1E1B24;
+    padding-top: 53px;
+}
+
+/*INDEX*/
+/*========================================================================*/
+
+#navicons{
+    background-color: #1E1B24;
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    gap: 21px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    z-index: 10000000;
+    padding-right: 42px;
+}
+
+#navtexto > a{
+    color: #F5F2EB;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+#navtexto{
+    background-color: #2F1F2D;
+    width: 100%;
+    height: 128px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 72px;
+    gap: 21px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    z-index: 10000000;
+    margin-bottom: 0;
+}
+
+.hero{
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    filter: brightness(0.8);
+}
+
+#banner{
+    position: relative;
+}
+
+#slogan{
+    width: 100%;
+    max-width: 609px;
+    height: 100%;
+    max-height: 354px;
+    z-index: 45;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 80px;
+    margin-left: 35px;
+    align-items: center;
+    display: flex;
+}
+
+#slogan > p{
+    font-size: 96px;
+    color: #F5F2EB;
+}
+
+#cordiferente{
+    color: #F4A660;
+    letter-spacing: 5%;
+}
+
+#bemvindos{
+    padding: 0px 20px;
+    gap: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#txt2{
+    width: 100%;
+    max-width: 540px;
+    font-size: 36px;
+    color: #F5F2EB;
+}
+
+#titulo{
+    font-size: 48px;
+    color: #F5F2EB;
+}
+
+#aspas{
+    font-size: 100px;
+}
+
+.distancia2{
+    margin: 150px 0;
+}
+
+.distancia{
+    margin-top: 10px;
+}
+
+#card-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    background-color: #2F1F2D;
+    border: 2px solid #E87A3E;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin-bottom: 150px;
+    border-radius: 6px;
+}
+
+#card-lateral {
+    grid-column: 1;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards-grid .letra-card {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    color: #E87A3E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.espaco-card {
+    margin: 20px 0;
+}
+
+#card-link-1, #card-link-2 {
+    grid-column: 2;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+#cards-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #E87A3E;
+    border-radius: 6px;
+    display: block;
+    pointer-events: none;
+}
+
+#card-link-1 > a, 
+#card-link-2 > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: #E87A3E;
+    text-decoration: none;
+    background-color: rgba(21, 19, 26, 0.2);
+}
+
+/*==========================================================================*/
+
+#caixa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteiner {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 20px;
+    background-color: #2F1F2D;
+    border: 2px solid #E87A3E;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    margin-bottom: 150px;
+    border-radius: 6px;
+}
+
+
+#informacao {
+    grid-column: 1;
+    grid-row: span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteiner .palavra {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    color: #E87A3E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.espaco2 {
+    margin: 15px 0;
+}
+
+#imagem1, #imagem2, #imagem3 {
+    grid-column: 2; 
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+#conteiner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #E87A3E;
+    border-radius: 6px;
+    display: block;
+}
+
+#imagem1 > a, 
+#imagem2 > a, 
+#imagem3 > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 26px;
+    color: #E87A3E;
+    text-decoration: none;
+}
+
+
+/*========================================================================*/
+
+/*HISTORIA*/
+/*========================================================================*/
+
+#caixa2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#historia{
+    background-color: #2F1F2D;
+    border: 2px solid #E87A3E;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    min-height: 500px;
+    padding: 35px;
+    margin: 150px 0;
+    border-radius: 6px;
+}
+
+#historia > h2{
+    color: #E87A3E;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#historia > p{
+    color: #F5F2EB;
+    font-size: 20px;
+}
+
+/*========================================================================*/
+
+/*SERVIÇOS*/
+/*========================================================================*/
+#horarios{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    max-height: 797px;
+    padding: 60px 20px;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+#linha{
+    width: 100%;
+    max-width: 494px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #E87A3E;
+    border-color: #E87A3E;
+}
+
+.txt{
+    text-align: center;
+    color: #F5F2EB;
+    font-size: 96px;
+    width: 100%;
+    max-width: 431px;
+    height: 153.33px;
+}
+
+.cards{
+    padding: 0px 20px;
+    gap: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cardsh{
+    width: 299px;
+    height: 302px;
+    border: 2px solid #E87A3E;
+    background-color: #2F1F2D;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 36px;
+    color: #F5F2EB;
+    padding: 30px 20px;
+}
+
+.cordiferente2{
+    color: #E87A3E;
+}
+
+#espaco{
+    width: 100%;
+    height: 20px; 
+    background-color: #E87A3E;
+    margin: 40px 0;
+}
+
+#cursos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 150px 0;
+}
+
+.txtcursos{
+    font-size: 42px;
+    color: #F5F2EB;
+    margin-bottom: 35px;
+}
+
+/*========================================================================*/
+
+#rodape{
+    position: relative;
+    width: 100%;
+    min-height: 428px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: #15131A;
+}
+
+#slogan2{
+    width: 100%;
+    max-width: 444px;
+    height: 100
+}
+
+#slogan2 > p{
+    font-size: 70px;
+    color: #F5F2EB;
+}
+
+#txtrodape{
+    display: flex;
+    flex-direction: column;
+}
+
+#txtrodape > a{
+    color: #F5F2EB;
+    font-size: 20px;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+#iconsrodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) { /*Funciona como um 'if' no java, tendo uma condição que, se satisfeita, executa oque está entre as chaves*/
+    /*Sintaxe: @media (condição Ex: relacionada com o tamanho da tela do dispositivo) {
+                ...
+                ...
+                ...
+                ...
+               }
+    */
+    #iconsrodape {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+}
